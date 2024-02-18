@@ -1,0 +1,39 @@
+html, body, #root, .app-container {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #101418;
+    color: white;
+
+    button {
+        background-color: #405cf5;
+        border-radius: 6px;
+        border-width: 0;
+        color: #fff;
+        cursor: pointer;
+        margin: 12px 0 0;
+    }
+
+    button:disabled {
+        cursor: not-allowed;
+    }
+
+    input, select {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f4f4f4;
+        transition: border-color 0.2s ease-in-out;
+
+        &:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        &::placeholder {
+            color: #999;
+        }
+    }
+}

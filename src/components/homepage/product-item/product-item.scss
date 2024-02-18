@@ -1,0 +1,7 @@
+.product-item-container {
+  width: 300px;
+
+  &.category {
+    cursor: pointer;
+  }
+}
